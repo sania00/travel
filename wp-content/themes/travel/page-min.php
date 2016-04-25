@@ -24,16 +24,12 @@ get_header("min"); ?>
                     <div class="wrap">
                         <?php require_once ('includ/slider.php');?>
                     </div>
-
-
                 </div>
+
             </div>
             <div class="main_right">
-
                 <div class="promo_slider">
-
                     <img src="/wp-content/uploads/2016/04/nation.jpg" alt="">
-                    
                 </div>
 
                 <div class="btm_toure photo">
@@ -97,7 +93,6 @@ get_header("min"); ?>
                         </div>
                     </div>
                 </div>
-
                 <div class="promo">
 
                     <div class="owl-carousel2">
@@ -113,46 +108,21 @@ get_header("min"); ?>
                             </p>
                             <p class="autor">- Jack W., Phoenix, AZ</p>
                         </div>
-
-                        <!--<div class="owl-item" style="">
-                            <p>"distinctio dolores dolorum esse est iure, nulla omnis pariatur
-                                quae qui quisquam ratione reprehenderit ullam vero.
-                            </p>
-                            <p class="autor">- Jack W., Phoenix, AZ</p>
-                        </div>
-                        <div class="owl-item" style="">
-                            <p>"e one in Kyoto. Thanks for all your help!"
-                            </p>
-                            <p class="autor">- Jack W., Phoenix, AZ</p>-->
                         </div>
                     </div>
                 </div>
 
             </div>
             <div class="clear"></div>
-            <!--<div class="block_content">
-                <h3>BIRDWATCHERS’ HEAVEN</h3>
-                <p>In Madagascar, birds can score endemism rates that are rarely achieved elsewhere. While 293 recorded
-                    species can seem low, more than half of them are endemic. Among them are the ground dwelling Giant
-                    Coua, the Crested Coua, commonly considered as the most beautiful bird on the Island, or the
-                    Vangas recognizable from their hooked beak. There are also 20 species of raptors, including the Red
-                    Owl and the Madagascar Fish Eagle which is similar to the American Bald Eagle. The Vangidae are also
-                    part of this list of endemic birds; they diversify into 14 species which can be differentiated by
-                    size,
-                    color and beak shape. The best season for bird watching is from October through December, when
-                    birds,
-                    through their songs, can be more easily spotted in the forests. <span>Several National Parks like Andasibe,
-                    Ankarafantsika, Ranomafana, Montagne d'Ambre are very popular bird watching sites.</span> Those who
-                    prefer
-                    large bird crowds can chose between several coastal sites (Ramena near Diégo Suarez, the Baie de
-                    Baly in the Majunga region, Nosy Ve and Tsimanampesotse in Tuléar.)</p>
-
-                <a href="#">
-                    <span class="btnb details">Find out more</span>
-
-                </a>
-
-            </div>-->
+            <div id=""  class="block_content">
+                <div class="wrap">
+                    <h3></h3>
+                    <p></p>
+                    <a href="#">
+                        <span class="btnb details">Find out more</span>
+                    </a>
+                </div>
+            </div>
     
             <div class="clear"></div>
             <div class="viaje">

@@ -1,4 +1,23 @@
 $(document).ready(function() {
+    /// View post content with Slider
+    $(".terrr a").click(function () {
+        var attr = $(this).find(".content").text();
+        var title = $(this).find(".nazv_nazv").text();
+        var id = $(this).find(".content").attr('atr');
+        $('.block_content .wrap').css('display','block').attr('id', id);
+        $('.block_content').attr('id', id);
+        $('.block_content p').text(attr);
+        $('.block_content h3').text(title);
+    });
+
+    // Smooth scrolling
+    $('a[href^="#"]').click(function(){
+        var el = $(this).attr('href');
+        $('body').animate({
+            scrollTop: $(el).offset().top}, 1000);
+        return false;
+    });
+    // View search form
     $(".close_nav").click(function(){
         $(".et-search-form").slideUp(300);
         $(".close_nav").slideUp(300);
@@ -24,6 +43,8 @@ $(document).ready(function() {
         $(".close_nav").slideDown(300);
         $('.et-search-form input').focus();
     });
+
+    // Slider
     $('.owl-carousel2').owlCarousel({
         animateIn: 'fadeIn',
         animateOut: 'fadeOut',

@@ -476,6 +476,7 @@ body {
     background-color: #faeeec;
     height: 407px !important;
     overflow: hidden;
+    position: relative;
 }
 
 .owl-theme .owl-controls .owl-dot span {
@@ -1068,22 +1069,26 @@ body {
     font-weight: 600;
     text-transform: uppercase;
 }
+.block_content{
+    padding-top: 40px;
+}
 
-.post .block_content {
+.block_content .wrap{
     width: 669px;
-    height: 337px;
+    height: auto;
     font-family: georgia;
     font-size: 16px;
     font-weight: 400;
     line-height: 20px;
     color: black;
-    margin-top: 42px;
     margin-left: 20px;
     border-left: 8px solid #01a66c;
     padding-left: 20px;
+    display: none;
+    padding-top: 1px;
 }
 
-.post .block_content h3 {
+.block_content h3 {
     width: 556px;
     height: 32px;
     color: #01a66c;
@@ -1094,11 +1099,11 @@ body {
     margin-bottom: 30px;
 }
 
-.post .block_content span {
+.block_content span {
     color: #d4180f;
 }
 
-.post .block_content .btnb {
+.block_content .btnb {
     background-color: #d4180f;
     color: white;
     font-family: georgia;
@@ -1106,13 +1111,13 @@ body {
     padding: 15px 35px;
 }
 
-.post .block_content .btnb:hover {
+.block_content .btnb:hover {
     background: red;
     transition: .3s;
     cursor: pointer;
 }
 
-.post .block_content a {
+.block_content a {
     height: 39px;
     margin-top: 30px;
     float: left;

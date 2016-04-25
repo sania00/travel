@@ -19,6 +19,7 @@
                                                     </span>
                             <p class="read_mere"><span> Read more...</span></p>
                             <span class="content hidden" atr="<?php the_ID(); ?>"><?php the_content(); ?></span>
+                            <span class="id hidden" atr="<?php the_ID(); ?>"><?php the_content(); ?></span>
                         </a>
                     </div>
                     <?php
