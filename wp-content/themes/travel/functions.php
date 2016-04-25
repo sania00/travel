@@ -59,5 +59,14 @@ function fix_svg() {
           }
           </style>';
 }
-add_action('admin_head', 'fix_svg');  
+add_action('admin_head', 'fix_svg');
 
+// Excerpt length
+function new_excerpt_length($length) {
+    return 28;
+}
+add_filter('excerpt_length', 'new_excerpt_length');
+
+add_filter('excerpt_more', function($more) {
+    return '...';
+});
