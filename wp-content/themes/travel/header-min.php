@@ -23,15 +23,14 @@
                 </a>
             </div>
             <div class="right-top-btn">
-                <h2>Giving you the Red island</h2>
-                <img class="lang" src="<?php echo get_template_directory_uri(); ?>/img/lang.png" alt="">
-                <div class="contact-us">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/note.png" alt=""><span>Contact Us</span>
-                </div>
-                <a class="notebook" href="/">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/book.png" alt=""><span>My Select</span>
-                </a>
-
+                <!--slogan widget-->
+                <?php if (function_exists('dynamic_sidebar'))
+                    dynamic_sidebar('slogan'); ?>
+                <!--Language Module -->
+                <?php do_action('icl_language_selector'); ?>
+                <!--slogan widget-->
+                <?php if (function_exists('dynamic_sidebar'))
+                    dynamic_sidebar('contact-us'); ?> 
 
             </div> <!--notebook-->
 

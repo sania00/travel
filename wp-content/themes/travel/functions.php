@@ -1,5 +1,5 @@
 <?php
-/** Загружаемые стили и скрипты**/
+/** Register scripts and style **/
 function load_style_script () {
     wp_enqueue_script('jquery-2', get_template_directory_uri() . '/lib/jquery.js');
     wp_enqueue_script('jquery-ui', get_template_directory_uri() . '/lib/jquery-ui.js');
@@ -22,25 +22,40 @@ function load_style_script () {
     wp_enqueue_style('jquery-ui-css', get_template_directory_uri() . '/css/jquery-ui.css');
 }
 
-/** Загрузка стилей и скриптов **/
+/** Load style and js **/
 add_action('wp_enqueue_scripts', 'load_style_script');
 
-/** Meню **/
+/** Menu **/
 register_nav_menu('menu', 'Main Menu');
 
-/** Виджеты **/
+/** Viget **/
 register_sidebar( array(
-    'name' => 'Логотип',
+    'name' => 'Logo',
     'id' => 'logo',
-    'description' => 'Логотип на всех старницах',
+    'description' => 'Logo in header',
     'before_widget' => '',
     'after_widget' => '',
 ) );
-/** Акордеон в на главной **/
+/** Main accordion **/
 register_sidebar( array(
-    'name' => 'Акордеон',
+    'name' => 'My Voyage',
     'id' => 'accordion',
-    'description' => 'Акордеон в на главной',
+    'description' => 'Accordion for main page',
+    'before_widget' => '',
+    'after_widget' => '',
+) );
+/** Slogan **/
+register_sidebar( array(
+    'name' => 'Slogan',
+    'id' => 'slogan',
+    'description' => 'Slogan in header',
+    'before_widget' => '',
+    'after_widget' => '',
+) );
+register_sidebar( array(
+    'name' => 'Contact-us',
+    'id' => 'contact-us',
+    'description' => 'Contact-us and notebook buttons',
     'before_widget' => '',
     'after_widget' => '',
 ) );

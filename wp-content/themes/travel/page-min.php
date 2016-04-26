@@ -28,89 +28,15 @@ get_header("min"); ?>
 
             </div>
             <div class="main_right">
-                <div class="promo_slider">
-                    <img src="/wp-content/uploads/2016/04/nation.jpg" alt="">
-                </div>
-
-                <div class="btm_toure photo">
-                    <div id="c3373" class="csc-default teaser image-link-only">
-                        <div class="csc-textpic csc-textpic-intext-right">
-                            <div class="csc-textpic-imagewrap">
-                                <div class="csc-textpic-image csc-textpic-last">
-                                    <img src="/wp-content/uploads/2016/04/photo.gif" alt="">
-                                </div>
-                            </div>
-                            <h4>Photo Tour</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="btm_toure luxery">
-                    <div id="c3373" class="csc-default teaser image-link-only">
-                        <div class="csc-textpic csc-textpic-intext-right">
-                            <div class="csc-textpic-imagewrap">
-                                <div class="csc-textpic-image csc-textpic-last">
-                                    <img src="/wp-content/uploads/2016/04/luxury.jpg" alt="">
-                                </div>
-                            </div>
-                            <h4>Luxury Tour</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="btm_toure birdwatching">
-                    <div id="c3373" class="csc-default teaser image-link-only">
-                        <div class="csc-textpic csc-textpic-intext-right">
-                            <div class="csc-textpic-imagewrap">
-                                <div class="csc-textpic-image csc-textpic-last">
-                                    <img src="/wp-content/uploads/2016/04/birdwatching.jpg" alt="">
-                                </div>
-                            </div>
-                            <h4>Birdwatching Tour</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="btm_toure gastronomy">
-                    <div id="c3373" class="csc-default teaser image-link-only">
-                        <div class="csc-textpic csc-textpic-intext-right">
-                            <div class="csc-textpic-imagewrap">
-                                <div class="csc-textpic-image csc-textpic-last">
-                                    <img src="/wp-content/uploads/2016/04/gastronomy.jpg" alt="">
-                                </div>
-                            </div>
-                            <h4>Gastronomy Tour</h4>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="btm_toure fishing">
-                    <div id="c3373" class="csc-default teaser image-link-only">
-                        <div class="csc-textpic csc-textpic-intext-right">
-                            <div class="csc-textpic-imagewrap">
-                                <div class="csc-textpic-image csc-textpic-last">
-                                    <img src="/wp-content/uploads/2016/04/fishing.jpg" alt="">
-                                </div>
-                            </div>
-                            <h4>Fishing Tour</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="promo">
-
-                    <div class="owl-carousel2">
-                        <div class="owl-item" style="">
-                            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                Accusamus amet aspernatur consequatur corporis deserunt
-                            </p>
-                            <p class="autor">- Jack W., Phoenix, AZ</p>
-                        </div>
-                        <div class="owl-item" style="">
-                            <p>"My clients loved the trip! Everything worked out so well. All the guides were excellent,
-                                but they especially liked the one in Kyoto. Thanks for all your help!"
-                            </p>
-                            <p class="autor">- Jack W., Phoenix, AZ</p>
-                        </div>
-                        </div>
-                    </div>
-                </div>
+                
+                <!--main page right column -->
+                <?php $posts = get_posts("category=9&orderby=date&numberposts=4"); ?>
+                <?php if ($posts) : ?>
+                    <?php foreach ($posts as $post) : setup_postdata($post); ?>
+                        <?php the_content(); ?>
+                    <?php endforeach;
+                    wp_reset_postdata();?>
+                <?php endif; ?>
 
             </div>
             <div class="clear"></div>
@@ -133,29 +59,36 @@ get_header("min"); ?>
                 </div>
                 <div class="v_center">
                     <h3>Direct access to </h3>
+                    <img class="arrow" src="<?php echo get_template_directory_uri(); ?>/img/arrow-down.png" alt="">
                     <ul>
                         <img src="<?php echo get_template_directory_uri(); ?>/img/signature.png" alt="">
                         <li>
+                            <img class="arrow-right" src="<?php echo get_template_directory_uri(); ?>/img/arrow-right.png" alt="">
                             <a href="/booking-terms-conditions/">Booking Terms & Conditions</a>
                         </li>
                         <img src="<?php echo get_template_directory_uri(); ?>/img/transport.png" alt="">
                         <li>
+                            <img class="arrow-right" src="<?php echo get_template_directory_uri(); ?>/img/arrow-right.png" alt="">
                             <a href="/getting-there-by-plane/">Getting there by plane</a>
                         </li>
                         <img src="<?php echo get_template_directory_uri(); ?>/img/transport2.png" alt="">
                         <li>
+                            <img class="arrow-right" src="<?php echo get_template_directory_uri(); ?>/img/arrow-right.png" alt="">
                             <a href="/our-transport/">Our Transport</a>
                         </li>
                         <img src="<?php echo get_template_directory_uri(); ?>/img/three.png" alt="">
                         <li>
+                            <img class="arrow-right" src="<?php echo get_template_directory_uri(); ?>/img/arrow-right.png" alt="">
                             <a href="/small-groups/">Small Groups</a>
                         </li>
                         <img src="<?php echo get_template_directory_uri(); ?>/img/tool.png" alt="">
                         <li>
+                            <img class="arrow-right" src="<?php echo get_template_directory_uri(); ?>/img/arrow-right.png" alt="">
                             <a href="/currency/">Currency</a>
                         </li>
                         <img src="<?php echo get_template_directory_uri(); ?>/img/document.png" alt="">
                         <li>
+                            <img class="arrow-right" src="<?php echo get_template_directory_uri(); ?>/img/arrow-right.png" alt="">
                             <a href="/visa/">Visa</a>
                         </li>
 
