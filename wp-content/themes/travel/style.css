@@ -7,7 +7,6 @@ Description: Данная тема создана для компании Travel
 Version: 1.0
 */
 body {
-    margin-bottom: 50px !important;
     font-family: georgia;
 }
 
@@ -327,6 +326,40 @@ body {
     background-size: 100% 100%;
     position: relative;
     z-index: 100;
+}
+
+.header-full .contact{
+    width: 260px;
+    float: left;
+    margin-right: 78px;
+    position: relative;
+    text-align: left;
+}
+.header-full .contact img{
+    width: 21px;
+    height: 21px;
+    position: relative;
+    margin-left: 34px;
+}
+.header-full .contact img:hover{
+    width: 21px;
+    height: 21px;
+    right: 35px;
+}
+
+.header-full .contact .skype{
+    display: inline-block;
+    color: #7dcadd;
+    font-family: georgia;
+    font-size: 14px;
+    font-weight: 700;
+    margin-left: -30px;
+}
+
+.header-full .contact p{
+    font-family: georgia;
+    font-size: 12px;
+    color: #fefefe;
 }
 
 .logo {
@@ -692,7 +725,9 @@ body {
     margin-top: 20px;
     padding: 15px;
 }
-
+.wrap-main-full #content{
+    padding: 0;
+}
 .main_text {
     background-color: #fa6200;
     padding: 35px 19%;
@@ -1017,6 +1052,29 @@ body {
     left: 52px;
 }
 
+.wrap-main-full .wrap_text{
+    height: 229px;
+    background-color: #fa6200;
+    padding-top: 40px;
+    width: 100%;
+    text-align: center;
+}
+
+.wrap-main-full .wrap_text p{
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.wrap-main-full .map{
+    height: 1000px;
+    width: 100%;
+    background-image: url(img/bg_map.jpg);
+    background-repeat: repeat;
+
+}
+
 .promo_slider{
     float: right;
     margin-right: 20px;
@@ -1094,49 +1152,27 @@ body {
 }
 
 .br_baner {
-    background-image: url("http://guruweb727.tmweb.ru/wp-content/uploads/2016/04/24-25111.jpg");
+    background-image: url("/wp-content/uploads/2016/04/24-25111.jpg");
     background-position: 50% 50%;
-    background-size: cover;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     width: 100%;
-    height: 600px;
-    margin-top: -27px;
-}
-
-.gw_banner {
-    color: #fff;
-    position: relative;
-    padding-top: 83px;
-}
-
-.gw_banner-1 {
-    margin: 0 auto;
-    position: relative;
+    height: 420px;
+    margin-top: -20px;
     display: block;
-    text-align: center;
-}
-
-.gw_banner-1 h1 {
-    color: rgba(255, 255, 255, 0.2);
-    font-size: 11vw;
-    font-weight: 600;
-    text-transform: uppercase;
-    line-height: 1;
 }
 
 .gw_banner-2 {
-    position: absolute;
-    top: 0;
-    left: 0;
     mix-blend-mode: overlay;
     display: block;
-    font-size: 11vw;
+    font-size: 6vw;
     line-height: 1;
     color: #fff;
     margin: 0 7px 20px;
     font-weight: 600;
     text-transform: uppercase;
+    padding-top: 151px;
+    text-align: center;
 }
 .block_content{
     padding-top: 40px;
@@ -1352,12 +1388,65 @@ body {
 
 
 footer {
-
     color: #FFF;
-    padding: 0.8em 2em 1.5em 2em;
+    padding: 0.8em 2em 0 0;
     position: relative;
-    margin-bottom: 32px;
-    height: 70px;
+    height: 285px;
+    background-image: url(img/bg_map.jpg);
+    background-repeat: repeat;
+}
+footer .wrap{
+    height: 235px;
+    background-image: url(img/bg-footer-full.png);
+    background-repeat: no-repeat;
+    background-size: 1050px;
+}
+footer .right h3 {
+    color: #fefefe;
+    font-family: georgia;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+footer .center h3 {
+    color: #fefefe;
+    font-family: georgia;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 25px 0 3px 0;
+}
+
+footer .center {
+    font-family: georgia;
+    padding-left: 35px;
+    font-size: 12px;
+}
+
+footer .wrap .logo{
+    width: 310px;
+    margin-top: 30px;
+}
+
+footer .wrap .center{
+    width: 310px;
+    float: left;
+    margin-top: 53px;
+    margin-left: 60px;
+}
+
+footer .wrap .center p{
+    display: inline-block;
+}
+
+footer .wrap .center h3{
+    margin-bottom: 10px;
+}
+
+footer .wrap .right{
+    float: left;
+    margin-top: 62px;
 }
 
 #footer-min {
@@ -1369,6 +1458,7 @@ footer {
     background-image: url(img/bg-footer.png);
     background-repeat: no-repeat;
     background-size: cover;
+    margin-bottom: 30px;
 }
 
 /**** FOOTER ****/
@@ -1665,92 +1755,7 @@ textarea.form-control {
 }
 
 /**** POP-UP ****/
-/**** SVG ****/
-#text {
-    width: 50%;
-    float: right;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    padding: 0 1em;
-}
 
-#imapc {
-    display: block;
-    width: 50%;
-    float: right;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    margin: 0;
-    border: 0;
-}
-
-#imap{
-    width: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-#areas {
-    width: 100%;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-}
-
-figcaption {
-    text-align: center;
-}
-
-table {
-    border-collapse: collapse;
-    border: 1px solid black;
-}
-
-td, th {
-    border: 1px solid silver;
-    padding: 0.2em 1em;
-}
-
-thead th {
-    background: #E0E0E0;
-    color: black;
-}
-
-tr {
-    background: white;
-}
-
-tr.red {
-    background: #FFF0F0;
-}
-
-tr.gray {
-    background: #CFCFCF;
-}
-
-tr:nth-child(even) {
-    background: #F0F0F0;
-}
-
-tr:nth-child(even).red {
-    background: #FFE6E6;
-}
-
-tr:nth-child(even).gray {
-    background: #CCCCCC;
-}
-
-tr.selected {
-    background: #CCCCFF;
-}
-tr:nth-child(even).selected {
-    background: #BBBBFF;
-}
-
-tr.highlight, tr:hover, tr:nth-child(even):hover, tr:nth-child(even).highlight,
-tr.red.highlight, tr.gray.highlight, tr.selected.highlight {
-    background: #FFFF99;
-    color: red;
-}
 .sf-menu a {
      border: none !important;
      padding-left: 13px!important;

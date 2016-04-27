@@ -30,6 +30,12 @@
                 <!--slogan widget-->
                 <?php if (function_exists('dynamic_sidebar'))
                     dynamic_sidebar('contact-us'); ?>
+                <!--contact-today widget-->
+                <div class="contact">
+                    <?php if (function_exists('dynamic_sidebar'))
+                        dynamic_sidebar('contact-today-header'); ?>
+                </div>
+
 
             </div> <!--notebook-->
 

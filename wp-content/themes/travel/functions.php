@@ -60,6 +60,22 @@ register_sidebar( array(
     'after_widget' => '',
 ) );
 
+register_sidebar( array(
+    'name' => 'Contact-today',
+    'id' => 'contact-today',
+    'description' => 'CONTACT US TODAY in footer',
+    'before_widget' => '',
+    'after_widget' => '',
+) );
+
+register_sidebar( array(
+    'name' => 'Contact-today for header',
+    'id' => 'contact-today-header',
+    'description' => 'CONTACT US TODAY in head',
+    'before_widget' => '',
+    'after_widget' => '',
+) );
+
 // allow SVG uploads
 add_filter('upload_mimes', 'custom_upload_mimes');
 function custom_upload_mimes ( $existing_mimes=array() ) {
