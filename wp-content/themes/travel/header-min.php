@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="shortcut icon" href="favicon.png"/>
-   
-</head>
 
+    <?php wp_head(); ?>
+</head>
 <body>
 
 <img src="/wp-content/uploads/2016/03/bg-main.jpg" alt="" id="bgmain"
@@ -24,19 +24,18 @@
             </div>
             <div class="right-top-btn">
                 <!--slogan widget-->
+                
                 <?php if (function_exists('dynamic_sidebar'))
                     dynamic_sidebar('slogan'); ?>
                 <!--Language Module -->
                 <?php do_action('icl_language_selector'); ?>
                 <!--slogan widget-->
                 <?php if (function_exists('dynamic_sidebar'))
-                    dynamic_sidebar('contact-us'); ?> 
+                    dynamic_sidebar('contact-us'); ?>
 
             </div> <!--notebook-->
 
             <div class="menu-header-nav"><!--menu-header-nav-->
-
-
 
                 <div class="seach_ico">
                     <div class="search">
@@ -56,15 +55,15 @@
 
                 <?php wp_nav_menu(array(
                         'menu_class' => 'menu-header sf-menu',
-                        'container'       => '',
+                        'container' => '',
                     )
                 ); ?>
 
                 <!--<div class="body-outer-wrapper">
                     <div class="header-wrapper main">-->
 
-                        <!-- Navigation -->
-                        <!--<div class="gdl-navigation-wrapper">
+                <!-- Navigation -->
+                <!--<div class="gdl-navigation-wrapper">
                             <div class="navigation-wrapper">
                                 <div class="gdl-current-menu"></div>
                                 <div id="main-superfish-wrapper" class="menu-wrapper">
@@ -72,16 +71,18 @@
                                                 'menu_class' => 'menu-header sf-menu',
                                                 'container'       => '',
                                             )
-                                        ); */?>
+                                        ); */ ?>
                                 </div>
                             </div>
                         </div>-->
-                    <!--</div> --><!-- header wrapper container -->
+                <!--</div> --><!-- header wrapper container -->
                 <!--</div>--> <!-- body wrapper -->
+
+
             </div> <!--menu-header-nav-->
         </div>
 
     </div>
 
-    <?php wp_head(); ?>
+
 

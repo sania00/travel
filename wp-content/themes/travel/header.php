@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="shortcut icon" href="favicon.png"/>
-
+    <?php wp_head(); ?>
 </head>
 
 <body>
@@ -14,19 +14,22 @@
     <div class="header-full">
         <div class="wrap">
             <div class="logo">
+                <!--slogan widget-->
+                <?php if (function_exists('dynamic_sidebar'))
+                    dynamic_sidebar('slogan'); ?>
+                <!--logo-->
                 <a href="<?php echo home_url(); ?>">
                     <?php if (function_exists('dynamic_sidebar'))
                         dynamic_sidebar('logo'); ?>
                 </a>
             </div>
             <div class="right-top-btn">
-                <div class="contact-us">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/back.png" alt=""><span>Contact us</span>
-                </div>
-                <a class="notebook" href="/">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/screpka2.png" alt=""><span>Notebook</span>
-                </a>
 
+                <!--Language Module -->
+                <?php do_action('icl_language_selector'); ?>
+                <!--slogan widget-->
+                <?php if (function_exists('dynamic_sidebar'))
+                    dynamic_sidebar('contact-us'); ?>
 
             </div> <!--notebook-->
 
@@ -55,5 +58,5 @@
 
     </div>
 
-    <?php wp_head(); ?>
+
 

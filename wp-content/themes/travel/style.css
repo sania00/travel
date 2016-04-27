@@ -79,10 +79,10 @@ body {
     width: 100%;
     position: relative;
     background-color: transparent;
+    overflow: hidden;
 }
 
-.wrap-main .logo,
-.wrap-main-full .logo {
+.wrap-main .logo {
     width: 344px;
     height: 183px;
     float: left;
@@ -91,6 +91,13 @@ body {
     background-repeat: no-repeat;
     -webkit-background-size: 344px 183px;
     background-size: 344px 183px;
+    margin-left: 12px;
+}
+.wrap-main-full .logo{
+    width: 344px;
+    height: 183px;
+    float: left;
+    margin-right: 29px;
     margin-left: 12px;
 }
 
@@ -134,6 +141,20 @@ body {
     font-weight: 700;
     margin-left: 10px;
 }
+#footer-min .right a img{
+    width: 27px;
+    height: 27px;
+}
+#footer-min .right a img:hover{
+    opacity: 0.8;
+}
+#footer-min .right a:hover,
+#footer-min .right a:active,
+#footer-min .right a:visited,
+#footer-min .right a:link{
+    text-decoration: none;
+}
+
 .logo-min img {
     width: 290px;
     margin: 0;
@@ -151,16 +172,20 @@ body {
     margin-right: 98px;
     margin-bottom: 30px;
     font-size: 19px;
+    position: relative;
+    margin-top: 25px;
+}
+.wrap-main-full .right-top-btn{
+    margin-bottom: 10px;
 }
 
 .wrap-main .right-top-btn #lang_sel,
 .wrap-main-full .right-top-btn #lang_sel{
-    height: 20px;
+    height: 0;
     width: 20px;
     position: absolute;
-    right: 35px;
-    margin-top: 2px;
-    top: 15px;
+    right: -62px;
+    top: -10px;
 }
 .wrap-main .right-top-btn .lang:hover,
 .wrap-main-full .right-top-btn .lang:hover{
@@ -228,14 +253,22 @@ body {
 .wrap-main .right-top-btn .notebook span{
 
 }
-.wrap-main .right-top-btn h2,
-.wrap-main-full .right-top-btn h2 {
+.wrap-main .right-top-btn h2{
     float: left;
     color: #260f38;
     font-family: georgiai;
     font-size: 23px;
+    margin-top: 0;
+}
+.wrap-main-full .header-full .logo h2{
+    color: #260f38;
+    font-family: georgiai;
+    font-size: 21px;
     font-style: italic;
     margin-top: 0;
+    position: absolute;
+    left: 130px;
+    top: 25px;
 }
 .wrap-main .right-top-btn .notebook,
 .wrap-main-full .right-top-btn .notebook {
@@ -243,12 +276,17 @@ body {
     margin-right: 21px;
 }
 
+.wrap-main-full .right-top-btn .notebook{
+    margin-right: 35px;
+}
+
 .wrap-main .right-top-btn .contact-us,
 .wrap-main-full .right-top-btn .contact-us {
     float: right;
     position: relative;
 }
-.wrap-main .right-top-btn .contact-us{
+.wrap-main .right-top-btn .contact-us,
+.wrap-main-full .right-top-btn .contact-us{
     height: 80px;
     width: 93px;
 }
@@ -262,7 +300,6 @@ body {
     font-family: Georgia;
     font-size: 20px;
     font-weight: 700;
-    font-style: italic;
     border-radius: 1px;
     background: linear-gradient(to bottom, rgba(171,141,224,0.94) 1%,rgba(171,141,224,0.94) 9%,rgba(122,92,175,1) 100%);
     margin-left: 35px;
@@ -271,7 +308,6 @@ body {
 }
 
 .header {
-    margin-bottom: -7px;
     border-radius: 10px 10px 0 0;
     margin-top: 25px;
     min-width: 800px;
@@ -279,16 +315,18 @@ body {
     height: 195px;
     background: url("img/bg.png");
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
 }
 
 .header-full {
     margin-bottom: -7px;
     width: 100%;
-    height: 155px;
-    background: url("img/bg.png");
+    height: 175px;
+    background: url("img/bg-full.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    position: relative;
+    z-index: 100;
 }
 
 .logo {
@@ -307,17 +345,24 @@ body {
     width: 70%;
     height: 80px;
     float: left;
-    padding-top: 25px;
 }
 
 .header .menu-header-nav, .header-full .menu-header-nav,
 .header-full .menu-header-nav, .header-full .menu-header-nav {
-
     float: left;
     width: 60%;
     height: 50px;
-
 }
+
+.header-full .menu-header-nav, .header-full .menu-header-nav{
+    width: 49%;
+}
+
+.header-full .menu-header-nav, .header-full .menu-header-nav{
+    float: right;
+    margin-right: 35px;
+}
+
 .menu-header-nav .et-search-field{
     font-size: 15px;
     color: white;
@@ -358,6 +403,11 @@ body {
 
 }
 
+.header-full .et-search-form{
+    float: right;
+    width: 630px;
+}
+
 .et-search-form {
     width: 572px;
     float: left;
@@ -379,11 +429,15 @@ body {
     font-size: 20px;
     line-height: 31px;
     font-weight: bold;
-    font-style: italic;
     text-shadow: 1px 1px 2px #5b5a5a;
     z-index: 1001;
-    padding-top: 7px !important;
-    padding-bottom: 8px !important;
+    background: linear-gradient(to bottom, rgba(171,141,224,0.94) 1%,
+    rgba(171,141,224,0.94) 9%,rgba(122,92,175,1) 100%);
+    padding: 7px 13px 8px 13px;
+}
+.header-full .menu-header a{
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
 }
 
 .menu-header-nav i {
@@ -417,15 +471,15 @@ body {
 .header li,
 .header-full li {
     padding: 0;
-
     height: 100%;
     padding-bottom: 0!important;
     transition: .3s;
     cursor: pointer;
+    white-space: nowrap;
 }
 
-#menu-item-109{
-    background-color: #EEF9B9!important;
+#menu-item-109 a{
+    background: #EEF9B9;
 
 }
 
@@ -435,13 +489,13 @@ body {
 }
 
 #menu-item-17{
-    background-color: #FFEC86;
+    background: #FFEC86;
     border-radius: 4px;
 }
 
 #menu-item-17 a{
     text-shadow: none;
-    background-color: #ffeb8b;
+    background: #ffeb8b;
     color: #7c5eb1;
 }
 
@@ -449,7 +503,7 @@ body {
 .header-full .menu-header a:hover {
     color: #7c5eb1;
     text-shadow: none;
-    background-color: #ffeb8b;
+    background: #ffeb8b !important;
 }
 
 .wrap-main #content,
@@ -635,7 +689,6 @@ body {
 }
 
 #content {
-    background: #fff;
     margin-top: 20px;
     padding: 15px;
 }
@@ -761,7 +814,7 @@ body {
 }
 .v_center a{
     font-family: georgiaa;
-    font-size: 16px;
+    font-size: 19px;
     color: black;
     text-decoration: none;
     border-bottom: 1px solid #7760b0;
@@ -780,18 +833,18 @@ body {
     height: 31px;
     margin-left: 36px;
     margin-bottom: 5px;
-
 }
-
 
 .v_center h3{
     color: black;
     font-family: georgia;
-    font-size: 24px;
+    font-size: 28px;
     font-weight: 700;
     line-height: 48px;
     margin-left: 13px;
     float: left;
+    margin-top: 0;
+    text-transform: uppercase;
 }
 
 .v_center img{
@@ -802,7 +855,7 @@ body {
     float: right;
 }
 .v_center .arrow{
-    margin-top: 40px;
+    margin-top: 25px;
     margin-left: 10px;
     width: 27px;
     height: 26px;
@@ -997,6 +1050,7 @@ body {
     width: 126px;
     height: 118px;
     top: -80px;
+    left: 0;
 }
 
 /**** FOOTER ****/
@@ -1042,11 +1096,12 @@ body {
 .br_baner {
     background-image: url("http://guruweb727.tmweb.ru/wp-content/uploads/2016/04/24-25111.jpg");
     background-position: 50% 50%;
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     width: 100%;
     height: 600px;
+    margin-top: -27px;
 }
 
 .gw_banner {
@@ -1154,8 +1209,8 @@ body {
     font-size: 30px;
     font-weight: 700;
     line-height: 48px;
-    margin-top: 120px;
     position: relative;
+    margin-top: 0;
 }
 
 .ui-accordion .ui-accordion-content{
@@ -1192,6 +1247,7 @@ body {
     font-family: georgia;
     font-size: 13px;
     font-weight: 400;
+    margin-bottom: 0;
 }
 
 .ui-accordion .ui-accordion-icons{
@@ -1206,8 +1262,9 @@ body {
 .viaje .v_left{
     background-color: #9094c2;
     height: 323px;
-    margin: 0;
-    padding-top: 5px;
+    height: 313px;
+    padding-top: 0;
+    margin: 5px;
 }
 .viaje .v_center ul{
     margin-left: 22px;
@@ -1219,8 +1276,9 @@ body {
     font-family: georgia;
     font-size: 30px;
     font-weight: 700;
-    line-height: 48px;
+    line-height: 42px;
     text-align: center;
+    margin-bottom: 0;
 }
 
 .viaje .v_center{
@@ -1241,6 +1299,7 @@ body {
     padding-top: 0;
     overflow: hidden;
     cursor: pointer;
+    padding-right: 10px;
 }
 
 .viaje .v_right .top{
@@ -1251,11 +1310,11 @@ body {
 }
 .viaje .v_right .top img{
     height: 154px;
-    width: 336px;
+    width: 326px;
 }
 .viaje .v_right .bottom img {
     height: 154px;
-    width: 336px;
+    width: 326px;
 }
 .viaje .v_right .csc-default.teaser.image-link-only
 .csc-textpic-imagewrap .csc-textpic-image::before{
@@ -1281,15 +1340,14 @@ body {
 
 .viaje .v_right .button h4{
     position: absolute;
-    top: 92px;
+    top: 68px;
     right: 20px;
     text-shadow: 0 0 15.4px rgba(255, 235, 139, 0.83);
     color: #260f38;
     font-family: "Times New Roman";
-    font-size: 39px;
+    font-size: 54px;
     font-weight: 700;
     line-height: 48px;
-
 }
 
 
@@ -1731,3 +1789,30 @@ div.responsive-menu-wrapper select{ width: 100%; height: 25px; }
 .v_left #lang_sel{
     display: none;
 }
+.v_left .ui-icon-circle-arrow-e{
+    background-position: -16px -128px;
+
+}
+.v_left .ui-accordion .ui-accordion-header .ui-accordion-header-icon{
+    left: 290px;
+}
+
+.v_left .ui-icon-circle-arrow-s {
+    background-position: -48px -128px;
+}
+.v_left .ui-state-active .ui-icon {
+    background-image: url("images/ui-icons_777777_256x240.png");
+}
+#accordion h3{
+    background-color: #eaf8fe;
+    background-image: url(img/btAminhaViaxe.png);
+    background-position: center center;
+    background-repeat: repeat-x;
+}
+#accordion .ui-state-active{
+    border: none;
+}
+#accordion .ui-accordion-content{
+    padding: 7px 6px !important;
+}
+

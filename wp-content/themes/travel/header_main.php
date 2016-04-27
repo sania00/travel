@@ -27,7 +27,7 @@
                 )
             );?>
         </div>
-
+        <?php wp_head(); ?>
     </header>
 
-    <?php wp_head(); ?>
+    
