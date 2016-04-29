@@ -24,6 +24,24 @@
             <?php endforeach;
             wp_reset_postdata(); ?>
         <?php endif; ?>
+        <div class="promo">
+            <div class="owl-carousel2">
+                <div class="owl-item">
+
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Accusamus amet aspernatur consequatur corporis deserunt
+                    <p class="autor">- Jack W., Phoenix, AZ</p>
+
+                </div>
+                <div class="owl-item">
+
+                    "My clients loved the trip! Everything worked out so well. All the guides were excellent,
+                    but they especially liked the one in Kyoto. Thanks for all your help!"
+                    <p class="autor">- Jack W., Phoenix, AZ</p>
+
+                </div>
+            </div>
+        </div>
 
     </div>
     <div class="clear"></div>
@@ -31,8 +49,9 @@
         <div class="wrap">
             <h3></h3>
             <div class="text_sleder"></div>
+           
             <a href="#" class="btn_bottom_content">
-                <span class="btnb details">Find out more</span>
+                <span class="btnb details" data-object_id="">I want it!</span>
             </a>
         </div>
     </div>

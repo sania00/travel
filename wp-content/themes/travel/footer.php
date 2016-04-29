@@ -1,4 +1,4 @@
-<footer>
+<footer id="footer-full">
     <div class="wrap">
         <div class="logo">
             <a href="<?php echo home_url(); ?>">

@@ -8,6 +8,7 @@ $(document).ready(function () {
         $('.block_content .wrap').css('display', 'block').attr('id', id);
         $('.viaje').css('margin-top', '120px');
         $('.block_content').attr('id', id);
+        $('.block_content .btnb').attr('data-object_id', id);
         $('.block_content .text_sleder').html(attr);
         $('.block_content h3').text(title);
     });
@@ -66,7 +67,7 @@ $(document).ready(function () {
         nav: true,
         autoplay: true,
         items: 1,
-        autoplayTimeout: 9000,
+        autoplayTimeout: 4500,
         smartSpeed: 250,
         fluidSpeed: 250,
         autoplaySpeed: 2500,
