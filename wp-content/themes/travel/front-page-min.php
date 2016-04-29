@@ -30,8 +30,8 @@
     <div id="" class="block_content">
         <div class="wrap">
             <h3></h3>
-            <p></p>
-            <a href="#">
+            <div class="text_sleder"></div>
+            <a href="#" class="btn_bottom_content">
                 <span class="btnb details">Find out more</span>
             </a>
         </div>

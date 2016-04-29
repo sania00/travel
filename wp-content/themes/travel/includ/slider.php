@@ -18,9 +18,9 @@
                                                         <?php the_excerpt(); ?>
                                                     </span>
                             <p class="read_mere"><span> Read more...</span></p>
-                            <span class="content hidden" atr="<?php the_ID(); ?>"><?php the_content(); ?></span>
-                            <span class="id hidden" atr="<?php the_ID(); ?>"><?php the_content(); ?></span>
+
                         </a>
+                        <span class="content hidden" atr="<?php the_ID(); ?>"><?php the_content(); ?></span>
                     </div>
                     <?php
                 endforeach;
@@ -48,8 +48,8 @@
                                                         <?php the_excerpt(); ?>
                                                     </span>
                             <p class="read_mere"><span> Read more...</span></p>
-                            <span class="content hidden" atr="<?php the_ID(); ?>"><?php the_content(); ?></span>
                         </a>
+                        <span class="content hidden" atr="<?php the_ID(); ?>"><?php the_content(); ?></span>
                     </div>
                     <?php
                 endforeach;
@@ -81,8 +81,8 @@
                                                         <?php the_excerpt(); ?>
                                                     </span>
                             <p class="read_mere"><span> Read more...</span></p>
-                            <span class="content hidden" atr="<?php the_ID(); ?>"><?php the_content(); ?></span>
                         </a>
+                        <span class="content hidden" atr="<?php the_ID(); ?>"><?php the_content(); ?></span>
                     </div>
                     <?php
                 endforeach;
@@ -111,8 +111,8 @@
                                                         <?php the_excerpt(); ?>
                                                     </span>
                             <p class="read_mere"><span> Read more...</span></p>
-                            <span class="content hidden" atr="<?php the_ID(); ?>"><?php the_content(); ?></span>
                         </a>
+                        <span class="content hidden" atr="<?php the_ID(); ?>"><?php the_content(); ?></span>
                     </div>
                     <?php
                 endforeach;
@@ -140,8 +140,8 @@
                                                         <?php the_excerpt(); ?>
                                                     </span>
                             <p class="read_mere"><span> Read more...</span></p>
-                            <span class="content hidden" atr="<?php the_ID(); ?>"><?php the_content(); ?></span>
                         </a>
+                        <span class="content hidden" atr="<?php the_ID(); ?>"><?php the_content(); ?></span>
                     </div>
                     <?php
                 endforeach;

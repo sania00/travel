@@ -1,20 +1,21 @@
 $(document).ready(function () {
-    
+
     /// View post content with Slider
     $(".terrr a").click(function () {
-        var attr = $(this).find(".content").html();
+        var attr = $(this).siblings('.content').html();
         var title = $(this).find(".nazv_nazv").text();
-        var id = $(this).find(".content").attr('atr');
+        var id = $(this).siblings(".content").attr('atr');
         $('.block_content .wrap').css('display', 'block').attr('id', id);
         $('.viaje').css('margin-top', '120px');
         $('.block_content').attr('id', id);
-        $('.block_content p').html(attr);
+        $('.block_content .text_sleder').html(attr);
         $('.block_content h3').text(title);
     });
 
     // Smooth scrolling
     $('a[href^="#"]').click(function () {
         var el = $(this).attr('href');
+        console.log(el);
         $('body').animate({
             scrollTop: $(el).offset().top
         }, 1000);
@@ -110,7 +111,6 @@ $(window).load(function () {
      var svgobject = document.getElementById('imap');
      if ('contentDocument' in svgobject)
      var svgdom = svgobject.contentDocument;
-
      // Подсвечиваем регион на карте при наведении мыши на соотв. строку таблицы.
      $("#areas tr").hover(
      function () {
