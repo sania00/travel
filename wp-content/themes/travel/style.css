@@ -1398,16 +1398,14 @@ body {
     cursor: pointer;
 }
 
-.block_content a {
-    color: red;
-}
+
 .btn_bottom_content{
     height: 39px;
     margin-top: 30px;
-    float: left;
+    float: right;
+    color: red;
 }
 
-.block_content
 
 .block_content .details {
     float: left;

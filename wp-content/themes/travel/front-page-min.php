@@ -46,13 +46,11 @@
     </div>
     <div class="clear"></div>
     <div id="" class="block_content">
-        <div class="wrap">
+        <div class="wrap text_product">
             <h3></h3>
             <div class="text_sleder"></div>
-           
-            <a href="#" class="btn_bottom_content">
-                <span class="btnb details" data-object_id="">I want it!</span>
-            </a>
+            <div class="button-add-to-cart"></div>
+            <div class="clear"></div>
         </div>
     </div>
 

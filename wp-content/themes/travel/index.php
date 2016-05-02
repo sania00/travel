@@ -12,8 +12,6 @@ get_header(); ?>
             </div>
         <?php endwhile; endif; ?>
 
-        ываыва
-
     </div><!--widecolumn-->
     </div> <!--wrap-main-->
 
