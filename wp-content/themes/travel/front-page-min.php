@@ -1,8 +1,10 @@
 <div class="post">
+    
 
     <div class="entrytext">
         <?php the_content('<p class="serif">Read the rest of this page &raquo;</p>'); ?>
     </div>
+    
     <div class="main_left">
         <h2><em>Enjoy these</em>...<strong> experiences</strong></h2>
         <p class="pre">What we are proposing here is not a tour. We want you to feel Madagascar.

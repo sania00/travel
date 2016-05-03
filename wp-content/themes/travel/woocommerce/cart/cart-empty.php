@@ -26,7 +26,7 @@ wc_print_notices();
 <p class="cart-empty">
 	<?php
 
-	$text = '<div class=\"no-select\">
+	$text = '<div class="no-select">
                                     <h4>You nothing selected!!!</h4>
                                     <p>Start planning your journey exploring the regions of Madagascar and the destinations.
                                         Keep browsing and creating your own personal itinerary for an unforgettable vacation
@@ -44,8 +44,3 @@ wc_print_notices();
 
 <?php do_action( 'woocommerce_cart_is_empty' ); ?>
 
-<p class="return-to-shop">
-	<a class="button wc-backward" href="/">
-		<?php _e( 'Return To Shop', 'woocommerce' ) ?>
-	</a>
-</p>
