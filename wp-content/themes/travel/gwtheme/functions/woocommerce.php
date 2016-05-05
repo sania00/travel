@@ -73,7 +73,7 @@ function custom_override_checkout_fields( $fields ) {
 
     return $fields;
 }
-
+/*
 add_action( 'woocommerce_admin_order_data_after_billing_address', 'my_custom_checkout_field_display_admin_order_meta', 10, 1 );
 
 function my_custom_checkout_field_display_admin_order_meta($order){
@@ -278,4 +278,4 @@ function custom_override_checkout_fields2( $fields ){
 
     return $fields;
 
-}
+}*/

@@ -1,6 +1,4 @@
-<div class="post">
-    
-
+<div class="post"> 
     <div class="entrytext">
         <?php the_content('<p class="serif">Read the rest of this page &raquo;</p>'); ?>
     </div>
@@ -14,6 +12,25 @@
                 <?php require_once('includ/slider.php'); ?>
             </div>
         </div>
+
+        <!--<div id="tab">
+            <ul>
+                <li><a href="#tab-1">BALENOPTERA ACUTOROSTRATA</a></li>
+                <li><a href="#tab-2">WHALE SHARK</a></li>
+            </ul>
+            <div id="tab-1">
+
+                <img class="lazy alignleft size-full wp-image-1259" style="display: block;" src="/wp-content/uploads/2016/05/rorqual.jpg" alt="rorqual" width="180" height="135" data-original="http://www.ulyssexplorer.com/wp-content/uploads/2013/07/rorqual.jpg" />
+                <strong>Between October and January it is possible to spot Balaenoptera acutorostrata:</strong> spanning a length of some 8-10 m, it weighs up to 9 tons. It is a splendid specie that is among those hunted by Japanese, Norwegians and Icelandics. They catch hundred of it a year to do “some studies”…
+
+            </div>
+            <div id="tab-2">
+
+                <img class="lazy alignleft size-full wp-image-1276" style="display: inline;" src="/wp-content/uploads/2016/05/requin-baleine-ulysse-explorer-madagascar.jpg" alt="requin-baleine-ulysse-explorer-madagascar" width="180" height="135" data-original="http://www.ulyssexplorer.com/wp-content/uploads/2013/07/requin-baleine-ulysse-explorer-madagascar.jpg" /><strong>It weighs as much as 30 tons, its mouth can be up to 1.5 m wide and its skin can have 10 cm thick. It’s the whale shark, Rhincodon typus. </strong>Despite the misleading reference, it is a shark – whose name highlights its big dimensions and its physiology looking like those of whales, but eats plankton and small fish as two other unique species: the Megachasma pelagios, A very rare shark seen only during 9 episodes in 1976, and the cetorino, elephant shark. The whale shark lives in Nosy-Be and it won’t be difficult to spot it during journeys on boat. When it is possible, we slide into deep to inspect and to take photos. <a title="Whale shark videos" href="http://www.ulyssexplorer.com/en/whale-shark-videos/">watch whale shark videos</a>
+
+            </div>
+        </div>-->
+
 
     </div>
     <div class="main_right">
@@ -29,18 +46,14 @@
         <div class="promo">
             <div class="owl-carousel2">
                 <div class="owl-item">
-
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Accusamus amet aspernatur consequatur corporis deserunt
                     <p class="autor">- Jack W., Phoenix, AZ</p>
-
                 </div>
                 <div class="owl-item">
-
                     "My clients loved the trip! Everything worked out so well. All the guides were excellent,
                     but they especially liked the one in Kyoto. Thanks for all your help!"
                     <p class="autor">- Jack W., Phoenix, AZ</p>
-
                 </div>
             </div>
         </div>
@@ -51,6 +64,17 @@
         <div class="wrap text_product">
             <h3></h3>
             <div class="text_sleder"></div>
+
+            <div id="tabs" style="float: left;display: none;">
+                <ul>
+                    <li><a href="#tabs-1" id="first_title"></a></li>
+                    <li><a href="#tabs-2" id="two_title"></a></li>
+                </ul>
+                <div id="tabs-1"></div>
+                <div id="tabs-2"></div>
+
+            </div>
+
             <div class="button-add-to-cart"></div>
             <div class="clear"></div>
         </div>

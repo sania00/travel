@@ -11,6 +11,7 @@ function gw_enqueue_styles(){
     wp_register_style('owl-carousel',THEME_URL . '/css/owl.carousel.css');
     wp_register_style('superfish', THEME_URL . '/css/superfish.css');
     wp_register_style('jquery-ui-css', THEME_URL . '/css/jquery-ui.css');
+    wp_register_style('response', THEME_URL . '/css/response.css');
 
     wp_enqueue_style('gwtheme-general-css');
     wp_enqueue_style('fonts');
@@ -19,6 +20,7 @@ function gw_enqueue_styles(){
     wp_enqueue_style('owl-carousel');
     wp_enqueue_style('superfish');
     wp_enqueue_style('jquery-ui-css');
+    wp_enqueue_style('response');
 }
 add_action('wp_enqueue_scripts', 'gw_enqueue_styles');
 

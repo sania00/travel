@@ -12,7 +12,7 @@ get_header(); ?>
             requires investment. Please share this article with others using the link below, do not
             cut & paste the article. See our Ts&Cs and Copyright Policy for more detail.
             Email info@brazil.com to buy additional rights.
-            http://brazil.com/home/travel/travel-ideas/nature/</p>
+            </p>
     </div>
 
     <div id="content" class="widecolumn">
